@@ -1,0 +1,10 @@
+Incluir antes do fechamento de </head>
+
+<link href="fontewesome/css/all.css" rel="stylesheet" type="text/css">
+<script src="fontewesome/js/all.js"></script>
+
+
+Exemplo de uso:
+
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram"></i>

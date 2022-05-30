@@ -1,0 +1,65 @@
+Iniciar o XAMPP
+
+Apache (Sevidor Web)
+http://localhost
+
+MySQL (Banco de Dados)
+http://localhost/phpmyadmin
+
+Local do servidor web:
+C:\xampp\htdocs\ctec\
+
+Local do Banco de dados:
+
+
+
+
+Instruções SQL para o Banco de Dados
+C:\xampp\mysql\data
+
+
+Inserir dados na tabela:
+INSERT INTO `tb_atuacao` (`idAtuacao`, `atuacao`) VALUES (NULL, 'Tecnologia da Informação'), (NULL, 'Administração');
+
+INSERT INTO `tb_cursos` (`idCurso`, `titulo`, `subtitulo`, `descricao`, `publicoAlvo`, `cargaHoraria`, `preRequisito`, `horario`, `ead`, `vagas`, `certicacao`, `valor`, `img1`, `img1Thumb`, `video`, `home`, `ativo`, `areaTi`, `areaAdm`) VALUES (NULL, 'Webdesigner', 'Aprenda a desenvolver websites', NULL, NULL, NULL, NULL, NULL, '0', NULL, '1', '500.00', NULL, NULL, NULL, '0', '1', '1', '0');
+
+
+INSERT INTO `tb_login` (`idLogin`, `nome`, `email`, `senha`) VALUES (NULL, 'Sandromir Almeida', 'sandromir@ctsdigital.com.br', '123456');
+
+
+Selecionar Tabela:
+SELECT * FROM `tb_atuacao`
+
+
+
+Alterar Tabela:
+ALTER TABLE `tb_cursos` CHANGE `areaAdm` `areaAdm` TINYINT(1) NULL DEFAULT '0';
+
+
+Consultas:
+SELECT * FROM tb_cursos WHERE ativo = 1
+
+SELECT * FROM `tb_cursos` WHERE 1 AND areaTi = 1
+
+SELECT * FROM `tb_cursos` WHERE 1 AND areaAdm = 1
+
+
+LOOP DO WHILE
+	<?php do { ?>
+				<?php echo($row_rs_curso['titulo']); ?><br>
+			 	<?php } while ($row_rs_curso = mysqli_fetch_assoc($rs_curso)); ?>
+
+
+
+CONSULTA POR REGISTRO POR SQL
+SELECT * FROM tb_cursos WHERE ativo = 1 AND idCurso = 75
+
+
+
+
+
+
+
+
+
+

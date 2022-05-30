@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body {
+	
+	margin: 0;
+}
+
+.titulo {
+    font-size: max(40px, 4.3vw);	
+
+}
+
+.vertical-center{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.fonte-zero{
+	
+	font-size: 0px;
+	padding: 0px;
+	opacity: 0;
+	float: none;
+	border: 0px;
+	display: none;
+}
+
+.fundo-menu{
+	
+	background-color: #343a40;
+}
+
+.fundo-rodape{
+	
+	background-color: #343a40;
+	
+	color: #ffffff
+}
+
+.icone-rodape {
+	
+	font-size: 40px;
+}
+
+.alert-dark {
+	text-decoration: none;
+}
